@@ -14,11 +14,20 @@ import static id.ac.polinema.dtsfit.Constant.BASE_URL;
 
 public class ServiceGenerator {
 
+
     private static Retrofit.Builder builder = new Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create());
 
     private static Retrofit retrofit = builder.build();
+//    private AService aService;
+//    private BService bService;
+//    private CService cService;
+//
+//    aService = ServiceGenerator.createService(AService.class);
+//    bService = ServiceGenerator.createService(BService.class);
+//    cService = ServiceGenerator.createService(CService.class);
+
 
     private static HttpLoggingInterceptor logging = new HttpLoggingInterceptor()
             .setLevel(HttpLoggingInterceptor.Level.BODY);
